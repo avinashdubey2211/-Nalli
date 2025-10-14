@@ -1,45 +1,47 @@
 
-import './App.css'
-import FeaturedProducts from './Pages/ FeaturedProducts/ FeaturedProducts'
-import Seller from './Pages/Best_Sellers/Seller'
-import Discover from './Pages/Discover-Nalli/Discover'
-import Diwali from './Pages/Diwali/Diwali'
-import Featured from './Pages/Featured_Collections/Featured'
-import Voucher from './Pages/Gift_Voucher/Voucher'
-import Home from './Pages/Home/Home'
-import Price from './Pages/Shop-by-Price/Price'
-import Shop from './Pages/Shop.jsx/Shop'
-import Navbar from './Shared/Navbar/Navbar'
-import Text from './Pages/Text/Text'
-import Sarees from './Pages/@nallisilksarees/Sarees'
-import Newsletter from './Pages/Newsletter/Newsletter'
-import Footer from './Pages/Footer /Footer'
-import Navbar_Menu from './Shared/Navbar_Menu/Navbar_Menu'
+
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { FaWhatsapp } from "react-icons/fa";
+import Navbar from "./Shared/Navbar/Navbar.jsx";
+import Home from './Page/Home/Index.jsx'
+import "./App.css";
+import ProductDetail from "./Components/Detail_pages/ProductDetail.jsx";
 
 
-function App() {
- 
+function ScrollToTop() {
+  const location = useLocation();
 
-  return (
-  <>
-    <Navbar/>
-    <Home/>
-    <FeaturedProducts/>
-    <Shop/>
-    <Diwali/>
-    <Featured/>
-    <Seller/>
-    <Price/>
-    <Voucher/>
-    <Discover/>
-    <Text/>
-    <Sarees/>
-    <Newsletter/>
-    <Footer/>
-    <Navbar_Menu/>
-  
-  </>
-  )
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  return null;
 }
 
-export default App
+function App() {
+  return (
+    <>
+      <ScrollToTop />
+
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/productdetail" element={<ProductDetail />} />
+      </Routes>
+
+      {/* WhatsApp  Button */}
+      <a
+        href="https://wa.me/917317018945"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-5 z-50 left-10 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300"
+      >
+        <FaWhatsapp size={30} />
+      </a>
+    </>
+  );
+}
+
+export default App;

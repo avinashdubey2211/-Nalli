@@ -8,7 +8,7 @@ const images = [
   "https://www.nalli.com/cdn/shop/files/Home-Banner_Fabrics_Desktop.jpg?v=1757480277&width=1500"
 ];
 
-const Home = () => {
+const ImageCourcel = () => {
   const [current, setCurrent] = useState(0);
 
   // Auto slide every 6 seconds
@@ -74,4 +74,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ImageCourcel;
