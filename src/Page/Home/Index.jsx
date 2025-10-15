@@ -36,7 +36,7 @@ const Index = () => {
     <Newsletter/>
     <Footer/>
     <Navbar_Menu/>
-    <ProductDetail/>
+    {/* <ProductDetail/> */}
  </>
   )
 }

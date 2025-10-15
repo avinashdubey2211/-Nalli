@@ -6,7 +6,12 @@ import { FaWhatsapp } from "react-icons/fa";
 import Navbar from "./Shared/Navbar/Navbar.jsx";
 import Home from './Page/Home/Index.jsx'
 import "./App.css";
+// import ProductDetail from "./Components/Detail_pages/ProductDetail/ProductDetail.jsx";
+import Sarees_Detail_Pages from "./Components/Detail_pages/Sarees_Detail_Pages/Sarees_Detail_Pages.jsx";
 import ProductDetail from "./Components/Detail_pages/ProductDetail.jsx";
+import Login from "./Components/Detail_pages/Login /Login.jsx";
+
+
 
 
 function ScrollToTop() {
@@ -29,6 +34,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/productdetail" element={<ProductDetail />} />
+                <Route path="/sarees_detail_pages" element={<Sarees_Detail_Pages />} />
+                                <Route path="/login" element={<Login />} />
+
+
+
+
       </Routes>
 
       {/* WhatsApp  Button */}
