@@ -313,7 +313,7 @@ const ProductDetail = () => {
             {products.map((product, index) => (
               <div key={index} className="flex-shrink-0 w-full sm:w-[45%] md:w-[32%] lg:w-[24%] snap-start bg-white rounded-xl shadow-md hover:shadow-xl transition-transform duration-300 transform hover:scale-105">
                 <div className="relative overflow-hidden rounded-t-xl group">
-                  <img src={product.img} alt={product.name} className="w-full h-[220px] sm:h-[280px] md:h-[350px] lg:h-[430px] object-cover transition-opacity duration-500 group-hover:opacity-0" />
+                  <img src={product.img} alt={product.name} className="w-full- h-[500px] sm:h-[600px] md:h-[350px] lg:h-[430px] object-cover transition-opacity duration-500 group-hover:opacity-0" />
                   <img src={product.hoverImg} alt={`${product.name} hover`} className="absolute inset-0 w-full h-[220px] sm:h-[280px] md:h-[350px] lg:h-[430px] object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100" />
                 </div>
                 <div className="px-3 py-2">
@@ -354,7 +354,7 @@ const ProductDetail = () => {
             {products1.map((product, index) => (
               <div key={index} className="flex-shrink-0 w-full sm:w-[45%] md:w-[32%] lg:w-[24%] snap-start bg-white rounded-xl shadow-md hover:shadow-xl transition-transform duration-300 transform hover:scale-105">
                 <div className="relative overflow-hidden rounded-t-xl group">
-                  <img src={product.img} alt={product.name} className="w-full h-[220px] sm:h-[280px] md:h-[350px] lg:h-[430px] object-cover" />
+                  <img src={product.img} alt={product.name} className="w-full h-[500px] sm:h-[600px] md:h-[350px] lg:h-[430px] object-cover" />
                 </div>
                 <div className="px-3 py-2">
                   <h4 className="font-semibold text-gray-900 text-sm md:text-base">{product.name}</h4>

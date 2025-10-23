@@ -139,7 +139,7 @@ const Seller = () => {
                   <img
                     src={product.img}
                     alt={product.name}
-                    className="w-full h-[220px] sm:h-[280px] md:h-[350px] lg:h-[430px] object-cover transition-opacity duration-500 group-hover:opacity-0"
+                    className="w-full h-[500px] sm:h-[600px] md:h-[350px] lg:h-[430px] object-cover transition-opacity duration-500 group-hover:opacity-0"
                   />
                   <img
                     src={product.hoverImg}

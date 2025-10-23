@@ -93,7 +93,7 @@ const Navbar = () => {
             {/* Logo */}
         <div className="flex items-center justify-between px-2 md:px-4">
   {/* Mobile Icons */}
-  <div className="flex sm:hidden items-center gap-4 text-gray-700 text-lg">
+  <div className="flex sm:hidden items-center gap-3 text-gray-700 text-lg">
     <FaSearch
       onClick={() => setSearchOpen(true)}
       className="cursor-pointer hover:text-[#9c2d2b]"
@@ -109,11 +109,11 @@ const Navbar = () => {
   </div>
 
   {/* Logo Centered */}
-  <div className="flex-1  px-4 flex justify-center">
+  <div className="flex-1  w-full px-4 flex  sm:justify-center justify-center">
     <img
       src="https://www.nalli.com/cdn/shop/files/Logo_1.webp?height=55&v=1752222706"
       alt="Nalli Logo"
-      className="w-16 h-11 md:w-24 cursor-pointer"
+      className="w-16 h-11 md:w-24   cursor-pointer"
       onClick={() => navigate("/")}
     />
   </div>

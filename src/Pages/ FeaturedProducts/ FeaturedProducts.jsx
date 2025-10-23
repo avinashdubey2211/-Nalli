@@ -85,7 +85,7 @@ const FeaturedProducts = () => {
                 <img
                   src={product.img}
                   alt={product.name}
-                  className="w-full h-[220px] sm:h-[280px] md:h-[350px] lg:h-[430px] object-cover transition-transform duration-500 transform hover:scale-110"
+                  className="w-full h-[500px] sm:h-[600px] md:h-[350px] lg:h-[430px] object-cover transition-transform duration-500 transform hover:scale-110"
                 />
               </div>
               <div className="p-3 sm:p-4">
